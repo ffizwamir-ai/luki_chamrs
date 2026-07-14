@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: 'Georgia', 'Playfair Display', serif;
+  --font-sans: 'Helvetica Neue', Arial, 'Plus Jakarta Sans', sans-serif;
+  
+  --color-brand-pink-light: #fffafb;
+  --color-brand-pink-soft: #fce7f3;
+  --color-brand-pink-rose: #fbcfe8;
+  --color-brand-pink-deep: #ad1457;
+  --color-brand-pink-vibrant: #ec4899;
+  --color-brand-lavender-light: #faf5ff;
+  --color-brand-lavender: #f3e8ff;
+  --color-brand-lavender-deep: #e9d5ff;
+  --color-brand-lavender-dark: #c084fc;
+  --color-brand-purple: #a855f7;
+  --color-brand-purple-deep: #4a148c;
+  --color-brand-purple-vibrant: #6a1b9a;
+  --color-gold: #d4af37;
+  --color-gold-light: #f3e5ab;
+  --color-luxury-charcoal: #4a148c;
+  
+  --animate-pulse-slow: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-sparkle: sparkle 2s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes sparkle {
+  0%, 100% { opacity: 0.3; transform: scale(0.9); }
+  50% { opacity: 1; transform: scale(1.1); }
+}
+
+/* Custom premium scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #fffafb;
+}
+::-webkit-scrollbar-thumb {
+  background: #fbcfe8;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ec4899;
+}
+
+/* Glassmorphism custom classes */
+.glass-panel {
+  background: rgba(255, 250, 251, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(251, 207, 232, 0.4);
+}
+
+.glass-panel-dark {
+  background: rgba(74, 20, 140, 0.05);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(168, 85, 247, 0.1);
+}
+
+.glass-navbar {
+  background: rgba(255, 250, 251, 0.8);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(251, 207, 232, 0.4);
+}
+
+/* Sparkling cursor background glow if needed */
+.sparkle-glow {
+  text-shadow: 0 0 10px rgba(236, 72, 153, 0.4), 0 0 20px rgba(233, 213, 255, 0.3);
+}
+
+.luxury-text-gradient {
+  background: linear-gradient(135deg, #4a148c 20%, #ec4899 50%, #6a1b9a 95%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.romantic-gradient-bg {
+  background: radial-gradient(circle at top left, #fffafb 0%, #fff 40%, #faf5ff 100%);
+}

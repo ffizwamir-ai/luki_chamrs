@@ -1,0 +1,6 @@
+{
+  "name": "Luki Charms",
+  "description": "Premium and luxury e-commerce website for handmade bracelets in Pakistan, featuring beautiful pink, lavender, and aesthetic jewelry.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
