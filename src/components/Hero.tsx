@@ -84,7 +84,7 @@ export default function Hero({ onShopNowClick, onViewCollectionClick }: HeroProp
               {/* Main Product Photography */}
               <div className="relative rounded-2xl overflow-hidden border border-white/60 shadow-2xl aspect-[16/9] bg-stone-100">
                 <img
-                  src="/src/assets/images/hero_bracelet_display_1784044348314.jpg"
+                  src="/assets/hero_bracelet_display_1784044348314.jpg"
                   alt="Luki Charms Premium Handmade Beaded Bracelets Display"
                   className="w-full h-full object-cover object-center transform hover:scale-105 transition duration-700"
                   referrerPolicy="no-referrer"
